@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "cwn/multiple-choice-quiz",
+    "title": "Multiple Choice Quiz",
+    "icon": "list-view",
+    "category": "widgets",
+    "attributes": {
+        "question": {
+            "type": "string"
+        },
+        "answers": {
+            "type": "array",
+            "default": [
+                ""
+            ]
+        },
+        "correctAnswer": {
+            "type": "number",
+            "default": null
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "white"
+        }
+    },
+    "example": {
+        "attributes": {
+            "question": "What is the capital of France?",
+            "answers": [
+                "London",
+                "Paris",
+                "Dublin",
+                "Madrid"
+            ],
+            "correctAnswer": 1,
+            "backgroundColor": "white"
+        }
+    },
+    "editorScript": "file:build/index.js",
+    "editorStyle": "file:build/index.css"
+}
