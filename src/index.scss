@@ -1,0 +1,36 @@
+.cwn-quiz {
+    padding: 2em 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    .label {
+        margin: 1em 0 2em;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-transform: uppercase;
+        padding: 10px 0px;
+        border-bottom: 1px solid #eee;
+        display: block;
+    }
+
+    .action-correct {
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        color: darkgoldenrod;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .action-delete {
+        color: red;
+        position: relative;
+
+        &:hover {
+            color: darkred;
+            cursor: pointer;
+        }
+    }
+}
