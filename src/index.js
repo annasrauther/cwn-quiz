@@ -10,8 +10,8 @@ import block from '../block.json';
 
     // Subscribe to the blocks store and check for blocks with undefined correctAnswer.
     wp.data.subscribe(function () {
-        const results = wp.data.select("core/block-editor").getBlocks().filter(function (block) {
-            return block.name === pluginName && block.attributes.correctAnswer === undefined;
+        const results = wp.data.select("core/block-editor").getBlocks().filter(function (blockItem) {
+            return block.name === block.name && blockItem.attributes.correctAnswer === undefined;
         });
 
         // If there are blocks with undefined correctAnswer and the post isn't already locked, lock it.

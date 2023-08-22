@@ -89,7 +89,7 @@ const Edit = (props) => {
             {
                 props.attributes.answers.map((answer, index) => {
                     return (
-                        <Flex key={index}>
+                        <Flex key={index} align="start">
                             <FlexBlock>
                                 <TextControl
                                     style={{ 
